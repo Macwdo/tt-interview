@@ -21,3 +21,45 @@ Implement the `User.retrieve_activity()` and `MiniVenmo.render_feed()` methods s
 **4** - Now users should be able to add friends. Implement the `User.add_friend()` method to allow users to add friends.
 
 **5** - Now modify the methods involved in rendering the feed to also show when user's added each other as friends.
+Here is your text with **corrected English**, keeping the same meaning and technical explanation.
+
+# Important Notes
+
+### AI Usage Disclosure
+
+No AI tools were used in the implementation of this project. The only place where AI assistance was used was to improve the "Important Notes" section of this documentation for clarity and grammar.
+
+### Feed features
+
+I didn’t change anything in the `MiniVenmo.run` section.
+
+For item **#3** to be displayed like:
+
+```text
+Bobby paid Carol $5.00 for Coffee
+Carol paid Bobby $15.00 for Lunch
+```
+
+I had to use a **singleton** in order to keep the execution order unchanged.
+In a **real-life scenario**, the storage would be a database, and we would have a proper way to persist the data.
+
+The **only change** in `MiniVenmo.run` was the callback for the `add_friend` method.
+
+The tests focus primarily on behavior-driven scenarios rather than exhaustive unit-level path coverage. 
+They are designed to validate the most important flows and critical edge cases.
+
+---
+
+### Instructions
+
+If you want to run the program and see the I/O for `main.py`, run:
+
+```bash
+python3 -m src.main
+```
+
+If you want to run the tests:
+
+```bash
+python3 -m unittest
+```
